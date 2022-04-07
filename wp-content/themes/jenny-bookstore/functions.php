@@ -6,6 +6,9 @@ function getHelloWorld(){
 function registerPostType(){
     register_post_type('book', [
         'public' => true,
+        'menu_position' => 3,
+        'menu_icon' => 'dashicons-book',
+        'has_archive' => true,
         'labels' => [
             'name'                  => _x( 'Books', 'Post type general name', 'textdomain' ),
             'singular_name'         => _x( 'Book', 'Post type singular name', 'textdomain' ),
